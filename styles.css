@@ -74,7 +74,7 @@ nav ul li {
 
 .search-button {
     position: relative;
-    top: -10px;
+    top: -9px;
     height: 40px; /* Ajusta según la altura deseada */
     display: flex;
     align-items: center; /* Centrar la lupa verticalmente */
