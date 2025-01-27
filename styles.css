@@ -28,7 +28,6 @@ nav {
     height: 250px; /* Altura igual al logo */
 }
 
-
 .nav-links {
     display: flex;
     align-items: center; /* Alinear verticalmente todos los elementos */
@@ -96,7 +95,7 @@ a {
 
 a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Efecto hover más suave */
-    color: #ececec;
+    color: #dbdbdb;
 }
 
 main {
@@ -268,3 +267,9 @@ footer {
     width: 90%; /* Ajusta el ancho de los productos en móviles */
     max-width: 300px;
     }
+
+@media(max-width: 730px){
+    .pantallas-chicas{
+        display: none;
+    }
+}
