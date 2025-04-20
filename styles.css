@@ -286,3 +286,19 @@ footer {
         display: none;
     }
 }
+}
+
+.terminos h3 {
+    margin-top: 0;
+}
+
+ .producto {
+    width: 90%; /* Ajusta el ancho de los productos en móviles */
+    max-width: 300px;
+    }
+
+@media(max-width: 730px){
+    .pantallas-chicas{
+        display: none;
+    }
+}
