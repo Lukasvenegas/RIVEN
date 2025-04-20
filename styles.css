@@ -182,8 +182,21 @@ main {
 
 @media (max-width: 480px) {
     .Logo {
-        height: 120px; /* Reducir aún más el tamaño en móviles */
-        width: 120px;
+        height: 100px; /* Reducir aún más el tamaño en móviles */
+        width: 100px;
+        margin-top: -100px;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    .search-container {
+        margin-top: -90px;
+    }
+
+    .search-container.active #search{
+        width: 150px;
     }
 
 }
