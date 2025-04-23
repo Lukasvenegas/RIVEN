@@ -180,7 +180,7 @@ main {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
     .Logo {
         height: 100px; /* Reducir aún más el tamaño en móviles */
         width: 100px;
