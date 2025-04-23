@@ -199,10 +199,6 @@ main {
         width: 150px;
     }
 
-    .servicio:hover{
-        transform: scale(0.8);
-    }
-
 }
 
 .servicio:hover {
@@ -291,17 +287,42 @@ footer {
     }
 }
 
-.terminos h3 {
-    margin-top: 0;
+.redes-sociales {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
- .producto {
-    width: 90%; /* Ajusta el ancho de los productos en móviles */
-    max-width: 300px;
+.redes-sociales a {
+    display: flex; /* Hace que el <a> se ajuste al contenido */
+    align-items: center;
+    justify-content: center;
+    width: 35px; /* Tamaño fijo que coincide con el ícono */
+    height: 35px;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.redes-sociales a i {
+    font-size: 30px;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes-sociales a:hover i {
+    transform: scale(1.2);
+    color: #e1306c;
+}
+
+@media (max-width: 480px) {
+    .redes-sociales a {
+        width: 28px;
+        height: 28px;
     }
 
-@media(max-width: 730px){
-    .pantallas-chicas{
-        display: none;
+    .redes-sociales a i {
+        font-size: 24px;
     }
 }
