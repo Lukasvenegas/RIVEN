@@ -199,6 +199,10 @@ main {
         width: 150px;
     }
 
+    .servicio:hover{
+        transform: scale(0.8);
+    }
+
 }
 
 .servicio:hover {
