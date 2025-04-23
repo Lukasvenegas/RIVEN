@@ -315,3 +315,14 @@ footer {
     transform: scale(1.2);
     color: #e1306c;
 }
+
+@media (max-width: 480px) {
+    .redes-sociales a {
+        width: 28px;
+        height: 28px;
+    }
+
+    .redes-sociales a i {
+        font-size: 24px;
+    }
+}
