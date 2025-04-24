@@ -202,7 +202,7 @@ main {
 }
 
 .servicio:hover {
-    transform: scale(1.05);
+    transform: scale(1.0);
 }
 
 /* Ajustar las imágenes de los servicios para que tengan el mismo tamaño */
