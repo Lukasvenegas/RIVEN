@@ -4,14 +4,18 @@ function scrollToComments() {
     commentsSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-// Función para mostrar u ocultar los términos y condiciones
 function toggleTerms() {
-    const termsSection = document.getElementById('terminos');
-    if (termsSection.style.display === "none") {
-        termsSection.style.display = "block";
-    } else {
-        termsSection.style.display = "none";
-    }
+    const terminos = document.getElementById("terminos");
+    const privacidad = document.getElementById("privacidad");
+    privacidad.style.display = "none";
+    terminos.style.display = terminos.style.display === "none" ? "block" : "none";
+}
+
+function togglePrivacy() {
+    const privacidad = document.getElementById("privacidad");
+    const terminos = document.getElementById("terminos");
+    terminos.style.display = "none";
+    privacidad.style.display = privacidad.style.display === "none" ? "block" : "none";
 }
 
 // Función para activar la barra de búsqueda con animación
