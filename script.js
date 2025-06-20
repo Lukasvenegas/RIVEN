@@ -31,14 +31,15 @@ document.querySelector('.search-button').addEventListener('click', function() {
 });
 
 document.getElementById('search').addEventListener('input', function () {
-    const query = this.value.toLowerCase();
-    const servicios = document.querySelectorAll('.servicios');
+    const query = this.value.toLowerCase().trim(); // texto buscado
+    const servicios = document.querySelectorAll('.servicios'); // todos los bloques de servicios
 
     servicios.forEach(function(servicio) {
         const nombre = servicio.querySelector('h2').textContent.toLowerCase();
         const descripcion = servicio.querySelector('p').textContent.toLowerCase();
         const keywords = servicio.getAttribute('data-keywords')?.toLowerCase() || "";
 
+        // Mostrar si coincide con nombre, descripción o palabras clave
         if (
             nombre.includes(query) ||
             descripcion.includes(query) ||
