@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
     background: #fff;
     margin: 0;
@@ -384,4 +389,31 @@ footer {
         align-items: center;
     }
 
+}
+
+.barra-lateral {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background-color: #30356c;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.barra-lateral a {
+  padding: 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 20px;
+}
+
+.barra-lateral a:hover {
+  background-color: #5055a5;
+  cursor: pointer;
 }
