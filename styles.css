@@ -389,6 +389,10 @@ footer {
         align-items: center;
     }
 
+    .barra-lateral {
+        width: 50px; /* Ancho reducido para pantallas pequeñas */
+    }
+
 }
 
 .barra-lateral {
