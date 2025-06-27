@@ -1,0 +1,353 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    background: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #040b27;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+}
+
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.logo-link:hover,
+.logo-link:focus,
+.logo-link:active {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+}
+
+.Logo {
+    height: 230px; /* Establece la altura a 20px */
+    width: 230px; /* Establece el ancho a 20px */
+    margin-right: 10px; /* Espacio entre el logo y el menú */
+    object-fit: contain; /* Mantiene la proporción sin distorsionar */
+}
+
+nav {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between;
+    padding: 0 5%; /* Eliminar padding superior/inferior */
+    height: 250px; /* Altura igual al logo */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center; /* Alinear verticalmente todos los elementos */
+}
+
+nav ul {
+    display: flex; /* Cambiar a flex para que los elementos estén en fila */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Alinear verticalmente los elementos del menú */
+}
+
+nav ul li {
+    margin: 0 10px; /* Espacio entre los elementos del menú */
+}
+
+.search-container {
+    display: flex;
+    align-items: center; /* Alinear verticalmente con el menú */
+    margin-left: 10px; /* Espacio entre el menú y la barra de búsqueda */
+}
+
+#search {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 0; /* Comienza con el ancho 0 */
+    opacity: 0; /* Comienza con opacidad 0 */
+    transition: width 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    display: block;
+}
+
+.search-container.active #search {
+    width: 200px; /* Ancho cuando está activo */
+    opacity: 1; /* Opacidad completa cuando está activo */
+}
+
+.search-container.active .lupa-icon {
+    transform: rotate(90deg); /* Efecto de rotación al abrir */
+}
+
+.search-button {
+    position: relative;
+    top: -9px;
+    height: 40px; /* Ajusta según la altura deseada */
+    width: 60px; /* Ajusta según el ancho deseado */
+    display: flex;
+    align-items: center; /* Centrar la lupa verticalmente */
+    margin-left: 5px; /* Espacio entre el input y el botón */
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 1 30px; /* Aumenta el margen entre elementos del menú */
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px; /* Añadir padding para mejorar la apariencia */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efecto hover más suave */
+    color: #dbdbdb;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.lupa-icon {
+    position: relative;
+    width: 20px; /* Ajusta el tamaño de la lupa */
+    height: auto;
+}
+
+.search-container.active #search {
+    width: 200px; /* Ancho deseado al abrir */
+    opacity: 1; /* Opacidad completa al abrir */
+}
+
+.search-container.active .lupa-icon {
+    transform: rotate(90deg); /* Efecto de rotación al activar */
+}
+
+@media (max-width: 768px) {
+    .Logo {
+        height: 150px; /* Reducir altura en pantallas más pequeñas */
+        width: 150px;
+    }
+}
+
+@media (max-width: 580px) {
+    .Logo {
+        height: 100px; /* Reducir aún más el tamaño en móviles */
+        width: 100px;
+        margin-top: -100px;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    .search-container {
+        margin-top: -90px;
+    }
+
+    .search-container.active #search{
+        width: 120px;
+    }
+
+    .search-button{
+        width: 50px; /* Ajustar el ancho del botón de búsqueda */
+        height: 40px; /* Ajustar la altura del botón de búsqueda */
+    }
+
+    .lupa-icon{
+        width: 22px; /* Ajustar el tamaño de la lupa */
+        height: auto; /* Mantener la proporción de la lupa */
+        left: -6px; /* Ajustar la posición de la lupa */
+    }
+
+}
+
+.comentarios {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #30356c;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5d6295;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #03356c;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #30356c;
+    color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.terminos {
+    background-color: #f9f9f9;
+    border: 1px solid #03356c;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    color: #000;
+}
+
+.terminos h3 {
+    margin-top: 0;
+}
+
+ .producto {
+    width: 90%; /* Ajusta el ancho de los productos en móviles */
+    max-width: 300px;
+    }
+
+@media(max-width: 730px){
+    .pantallas-chicas{
+        display: none;
+    }
+
+    .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .privacidad-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+}
+
+.redes-sociales {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales a {
+    display: flex; /* Hace que el <a> se ajuste al contenido */
+    align-items: center;
+    justify-content: center;
+    width: 35px; /* Tamaño fijo que coincide con el ícono */
+    height: 35px;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.redes-sociales a i {
+    font-size: 30px;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes-sociales a:hover i {
+    transform: scale(1.2);
+    color: #e1306c;
+}
+
+@media (max-width: 480px) {
+    .redes-sociales a {
+        width: 28px;
+        height: 28px;
+    }
+
+    .redes-sociales a i {
+        font-size: 24px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barra-lateral {
+        width: 50px; /* Ancho reducido para pantallas pequeñas */
+   }
+}
+
+.barra-lateral {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background-color: #30356c;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.barra-lateral a {
+  padding: 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 20px;
+}
+
+.barra-lateral a:hover {
+  background-color: #5055a5;
+  cursor: pointer;
+}
