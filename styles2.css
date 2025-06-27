@@ -40,6 +40,10 @@ header {
     object-fit: contain; /* Mantiene la proporción sin distorsionar */
 }
 
+.ofrecemos{
+    color: #000; /* Color del texto */
+}
+
 nav {
     display: flex;
     align-items: center; /* Alinear verticalmente */
