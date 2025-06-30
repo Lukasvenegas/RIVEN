@@ -2,7 +2,7 @@
 
 **Sitio web:** [https://riven.vercel.app](https://riven.vercel.app)
 
-Riven es una plataforma web moderna enfocada en ofrecer [Finalidad de promover el negocio de las impresiones y publicidades de Riven al siguiente nivel]. Está construida con tecnologías actuales y desplegada en Vercel, lo que garantiza una experiencia fluida, rápida y responsiva.
+Riven es una plataforma web moderna enfocada en ofrecer y promover el crecimiento de la empresa. Está construida con tecnologías actuales y desplegada en Vercel, lo que garantiza una experiencia fluida, rápida y responsiva.
 
 ---
 
