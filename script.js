@@ -51,3 +51,17 @@ document.getElementById('search').addEventListener('input', function () {
         }
     });
 });
+
+// Función para expandir y contraer categorías
+function expandir(elemento) {
+  document.querySelectorAll('.categoria').forEach((el) => {
+    if (el !== elemento) {
+      el.classList.remove('expandido');
+    }
+  });
+  elemento.classList.toggle('expandido');
+}
+
+function scrollToComments() {
+  alert("Aquí puedes colocar la lógica para redirigir, abrir un formulario, etc.");
+}
