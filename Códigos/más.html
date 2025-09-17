@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIVEN | Servicios</title>
+    <link rel="stylesheet" href="/Códigos/styles2.css">
+    <link rel="shortcut icon" type="image/png" href="imagenes/logo.png">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div> 
+                 <a href="/index.html" class="logo-link">
+                 <img class="Logo" src="imagenes/logo.png" alt="Logo">
+                 </a>
+            </div>
+
+            <div class="nav-links">
+                <div class="pantallas-chicas">
+                <ul id="menu">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="quienes_somos.html">Quienes somos</a></li>
+                    <li><a href="#">Contactenos</a></li>
+                </ul>
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar productos..." id="search" name="search">
+                    <button class="search-button" onclick="searchFunction()">
+                        <img src="imagenes/lupa.png" alt="Buscar" class="lupa-icon">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="más_servicios" class="más_servicios">
+            <h1>Nuestros Servicios</h1>
+            <p>En Riven, ofrecemos una amplia gama de servicios diseñados para satisfacer las necesidades de nuestros clientes. Desde estapados de tazas hasta sesiones de fotos, todo con la finalidad de motivar su empresa al crecimiento... Bienvenidos a "RIVEN".</p>
+            <p>Nuestros servicios incluyen:</p>
+           <!--Divs con transform + imagen de todo lo que incluye papel/impresion-->
+
+           <main>
+
+           <div class="categoria" onclick="expandir(this)">
+                <div class="titulo">Impresiones y Estampados</div>
+                  <div class="contenido">
+                     <div class="grid-servicios">
+                       <div class="servicios" data-keywords="cartel, impresión, publicidad, grande, papel">
+                        <img src="imagenes/imagen-3.jpg" alt="">
+                        <h2>Impresión de carteles</h2>
+                        <p>Carteles tamaño grande</p>
+                        <button class="consultar" onclick="scrollToComments()">Consulte aquí</button>
+                       </div>
+                      <div class="servicios">
+                        <img src="imagenes/imagen-4.jpg" alt="">
+                        <h2>Stickers personalizados</h2>
+                        <p>Diversos formatos y tamaños</p>
+                        <button class="consultar" onclick="scrollToComments()">Consulte aquí</button>
+                     </div>
+                   <!-- Agrega hasta 7 servicios aquí -->
+                 </div>
+              </div>
+           </div>
+
+
+           <div class="categoria" onclick="expandir(this)">
+              <div class="titulo">Diseños Publicitarios</div>
+                <div class="contenido">
+                  <div class="grid-servicios">
+                    <div class="servicios">
+                     <img src="imagenes/logo.jpg" alt="">
+                     <h2>Diseño de Logos</h2>
+                     <p>Logo profesional único</p>
+                     <button class="consultar" onclick="scrollToComments()">Consulte aquí</button>
+                    </div>
+                  <!-- Más servicios... -->
+                 </div>
+              </div>
+           </div>
+
+         </main>
+
+            <p>Nos comprometemos a ofrecerle la mejor experiencia de compra posible, con un equipo siempre dispuesto a ayudarle y resolver cualquier duda que pueda tener.</p>
+
+        <section id="comentarios" class="comentarios">
+            <h2>Comentarios</h2>
+            <form action="mailto:publicidadesriven@outlook.com@outlook.com" method="post" enctype="text/plain">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Comentario:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/publicidadesriven" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        
+    
+        <p>&copy; 2025 Riven. Todos los derechos reservados.</p>
+        <div class="footer-links">
+        <a href="#terminos" onclick="toggleTerms()">Términos y Condiciones</a> |
+        <a href="#privacidad" onclick="togglePrivacy()">Términos de Privacidad</a>
+        </div>
+
+        <!-- Términos y Condiciones -->
+        <div id="terminos" class="terminos" style="display: none;">
+          <h3>Términos y Condiciones</h3>
+          <p><strong>1. Aceptación de los Términos:</strong> Al acceder a este sitio web, usted acepta cumplir con estos términos y condiciones.</p>
+          <p><strong>2. Cambios en los Términos:</strong> Nos reservamos el derecho de modificar estos términos en cualquier momento.</p>
+          <p><strong>3. Uso del Sitio:</strong> Usted se compromete a usar el sitio web de manera legal y apropiada.</p>
+          <p><strong>4. Productos y Precios:</strong> Nos reservamos el derecho a modificar los precios de los productos sin previo aviso.</p>
+          <p><strong>5. Política de Devoluciones:</strong> Las devoluciones se aceptan dentro de los 30 días de la compra, siempre que el producto esté en su estado original.</p>
+          <p><strong>6. Limitación de Responsabilidad:</strong> No seremos responsables de daños directos o indirectos que resulten del uso de este sitio web.</p>
+        <button onclick="toggleTerms()">Cerrar</button>
+       </div>
+
+       <!-- Términos de Privacidad -->
+       <div id="privacidad" class="terminos" style="display: none;">
+         <h3>Términos de Privacidad</h3>
+         <p><strong>1. Recopilación de Datos:</strong> Recopilamos información personal como nombre, correo electrónico y preferencias de uso.</p>
+         <p><strong>2. Uso de los Datos:</strong> Utilizamos sus datos para mejorar nuestros servicios y ofrecerle una mejor experiencia de usuario.</p>
+         <p><strong>3. Protección de Datos:</strong> Implementamos medidas de seguridad para proteger su información personal.</p>
+         <p><strong>4. Compartición de Información:</strong> No vendemos ni compartimos su información con terceros, salvo cuando sea necesario para prestarle nuestros servicios.</p>
+         <p><strong>5. Derechos del Usuario:</strong> Usted tiene derecho a acceder, modificar o eliminar su información personal.</p>
+         <p><strong>6. Cambios en la Política:</strong> Nos reservamos el derecho de actualizar esta política en cualquier momento.</p>
+         <button onclick="togglePrivacy()">Cerrar</button>
+      </div>
+    </footer>
+    
+<!-- Barra lateral de navegación -->
+      <div class="barra-lateral">
+         <a href="#header" title="Inicio"><i class="fas fa-arrow-up"></i></a>
+         <a href="#quienes-somos" title="quienes-somos"><i class="fas fa-user-tie"></i></a>
+         <a href="#comentarios" title="Comentarios"><i class="fas fa-comments"></i></a>
+      </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
