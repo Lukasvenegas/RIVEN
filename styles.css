@@ -216,6 +216,10 @@ main {
         margin-top: -90px;
     }
 
+   .body{
+    background-color: #fff;
+   }
+
     .search-container.active #search{
         width: 120px;
     }
