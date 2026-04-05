@@ -17,6 +17,13 @@
                  </a>
             </div>
 
+            <!-- Hamburger Menu Button (Mobile Only) -->
+            <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
             <div class="nav-links">
                 <div class="pantallas-chicas">
                 <ul id="menu">
@@ -34,6 +41,25 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu-backdrop" id="mobileMenuBackdrop" aria-hidden="true"></div>
+        <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation menu">
+            <ul class="mobile-menu-links">
+                <li><a href="/index.html" class="mobile-menu-link">Inicio</a></li>
+                <li><a href="#" class="mobile-menu-link">Servicios</a></li>
+                <li><a href="quienes_somos.html" class="mobile-menu-link">Quienes somos</a></li>
+                <li><a href="#" class="mobile-menu-link">Contactenos</a></li>
+            </ul>
+
+            <!-- Mobile Search Bar (Always Visible Inside Menu) -->
+            <div class="mobile-search-container">
+                <input type="text" placeholder="Buscar productos..." class="mobile-search-input" id="mobileSearch" name="mobile-search">
+                <button class="mobile-search-button" aria-label="Search">
+                    <img src="imagenes/lupa.png" alt="" class="mobile-lupa-icon">
+                </button>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -150,6 +176,6 @@
          <a href="#comentarios" title="Comentarios"><i class="fas fa-comments"></i></a>
       </div>
 
-     <script src="script.js"></script>
+     <script src="../script.js"></script>
 </body>
 </html>
